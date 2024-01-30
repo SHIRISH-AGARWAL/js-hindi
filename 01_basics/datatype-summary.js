@@ -49,6 +49,33 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+console.log(typeof anotherId);          // datatype = symbol
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3   // for datatypes 
+
+
+// ******************* Stack(Primitive) and Heap(non-primitive) **************************
+
+// Primitive type example
+
+let myYoutubeName = "hitestchaudharydotcom"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// Reference type example
+
+let userOne = {
+    email: "user@google.com",
+    upi:  "user@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "hitest@google.com"
+
+console.log(userOne);
+console.log(userTwo);
+
